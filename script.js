@@ -1,7 +1,7 @@
 const testimonials = [
-    { name: "Islam", feedback: "Abdel Fattah is a very creative and hardworking person. Thank you Abdel Fattah.", avatar: "./Abdelfattah/public/islam.png" },
-    { name: "Ziad Ahmed", feedback: "Abdel Fattah is creative and loves learning very much, and I can attest to that. Thank you Abdel Fattah.", avatar: "./Abdelfattah/public/zyiad.png" },
-    { name: "Mohab Mohamed", feedback: "Abdel Fattah is very punctual. He delivered the video the day before work and in very high quality. Thank you Abdel Fattah.", avatar: "./Abdelfattah/public/Mohab Mohamed.png" },
+    { name: "Islam", feedback: "Abdel Fattah is a very creative and hardworking person. Thank you Abdel Fattah.", avatar: "./public/islam.png" },
+    { name: "Ziad Ahmed", feedback: "Abdel Fattah is creative and loves learning very much, and I can attest to that. Thank you Abdel Fattah.", avatar: "./public/zyiad.png" },
+    { name: "Mohab Mohamed", feedback: "Abdel Fattah is very punctual. He delivered the video the day before work and in very high quality. Thank you Abdel Fattah.", avatar: "./public/Mohab Mohamed.png" },
 ];
 
 function initMobileMenu() {
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadTestimonials();
     initGame();
 });
-const pages = [{ title: "Home", url: "/Abdelfattah/index.html" },
+const pages = [{ title: "Home", url: "/Abdelfattah/" },
   { title: 'clients', url: '/Abdelfattah/clients.html' },
   { title: "portfolio", url: "/Abdelfattah/portfolio.html" },
   { title: "Contact", url: "/Abdelfattah/contact.html" }
