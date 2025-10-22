@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelfattah - Video Editing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-green-900 min-h-screen text-white">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-50 backdrop-blur-md border-b border-blue-500">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-center md:text-left">
+                    <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">Abdelfattah</h1>
+                    <p class="text-sm text-gray-300">Video Editing</p>
+                </div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="clients.html" class="nav-link">Clients</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="mobile-menu" class="md:hidden mt-4 space-y-2 hidden">
+                <li><a href="index.html" class="block nav-link active">Home</a></li>
+                <li><a href="clients.html" class="block nav-link">Clients</a></li>
+                <li><a href="portfolio.html" class="block nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="block nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="container mx-auto">
+            <div class="floating-window max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-green-300">Welcome to My World</h2>
+                <p class="text-xl text-gray-300 mb-4">Professional Video Editor</p>
+                <p class="text-gray-400">Transforming raw footage into compelling visual stories</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="floating-window delay-1">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-300">About Me</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Hi, I'm Abdelfattah, a passionate video editor with years of experience creating engaging content.
+                        I specialize in transforming ideas into captivating visual narratives that resonate with audiences.
+                    </p>
+                </div>
+                <div class="floating-window delay-2">
+                    <h3 class="text-2xl font-bold mb-4 text-green-300">My Expertise</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>• Professional Video Editing</li>
+                        <li>• Color Grading & Correction</li>
+                        <li>• Motion Graphics</li>
+                        <li>• Sound Design</li>
+                        <li>• YouTube Content Creation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="floating-window max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold mb-6 text-center text-blue-300">Catch the Orbs!</h3>
+                <div id="game-container" class="relative bg-black bg-opacity-40 rounded-lg overflow-hidden border-2 border-blue-500" style="height: 400px;">
+                    <div id="score-display" class="absolute top-4 left-4 text-2xl font-bold z-10">Score: <span id="score">0</span></div>
+                    <div id="timer-display" class="absolute top-4 right-4 text-2xl font-bold z-10">Time: <span id="timer">30</span>s</div>
+                    <canvas id="game-canvas" class="w-full h-full"></canvas>
+                    <div id="game-over" class="hidden absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80">
+                        <h4 class="text-4xl font-bold mb-4">Game Over!</h4>
+                        <p class="text-2xl mb-6">Final Score: <span id="final-score">0</span></p>
+                        <button id="restart-btn" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg font-bold hover:scale-105 transition-transform">Play Again</button>
+                    </div>
+                </div>
+                <p class="text-center text-gray-400 mt-4">Click the glowing orbs before time runs out!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black bg-opacity-50 border-t border-blue-500 py-6">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>&copy; 2024 Abdelfattah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

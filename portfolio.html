@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Abdelfattah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-blue-900 to-green-900 min-h-screen text-white">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-50 backdrop-blur-md border-b border-blue-500">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-center md:text-left">
+                    <h1 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">Abdelfattah</h1>
+                    <p class="text-sm text-gray-300">Video Editing</p>
+                </div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="clients.html" class="nav-link">Clients</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="mobile-menu" class="md:hidden mt-4 space-y-2 hidden">
+                <li><a href="index.html" class="block nav-link">Home</a></li>
+                <li><a href="clients.html" class="block nav-link">Clients</a></li>
+                <li><a href="portfolio.html" class="block nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="block nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-green-300">My Work</h2>
+                <p class="text-xl text-gray-300">A showcase of my recent projects</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="floating-window video-container">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/bYwRIWHs_Fg" title="Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="floating-window video-container delay-1">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/WCYKRSNt4SE" title="Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="floating-window video-container delay-2">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/DNGXHE_CHr0" title="Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="floating-window video-container delay-3">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/ZgdtzivZAms" title="Video 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="floating-window video-container delay-4">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/lbjTuWFSdYw" title="Video 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="floating-window video-container delay-5">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/rFv3fMzl2Po" title="Video 6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black bg-opacity-50 border-t border-blue-500 py-6">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>&copy; 2024 Abdelfattah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
