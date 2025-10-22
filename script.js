@@ -1,5 +1,5 @@
 const testimonials = [
-    { name: "Islam", feedback: "Abdel Fattah is a very creative and hardworking person. Thank you Abdel Fattah.", avatar: "./public/islam.png" },
+    { name: "Islam", feedback: "Abdel Fattah is a very creative and hardworking person. Thank you Abdel Fattah.", avatar: "./public/Islam.png" },
     { name: "Ziad Ahmed", feedback: "Abdel Fattah is creative and loves learning very much, and I can attest to that. Thank you Abdel Fattah.", avatar: "./public/zyiad.png" },
     { name: "Mohab Mohamed", feedback: "Abdel Fattah is very punctual. He delivered the video the day before work and in very high quality. Thank you Abdel Fattah.", avatar: "./public/Mohab Mohamed.png" },
 ];
